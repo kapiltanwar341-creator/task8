@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio - Our Projects</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#"><i class="bi bi-lightning-charge-fill text-warning"></i> CreativeStudio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-3">
+                        <button class="theme-toggle" id="themeToggle"><i class="bi bi-moon-stars-fill" id="themeIcon"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container text-center position-relative" style="z-index: 2;">
+            <h1 class="display-2 fw-bold mb-3 text-white">Our Creative Projects</h1>
+            <p class="lead fs-4 mb-4 text-white">Transforming Ideas Into Stunning Digital Experiences</p>
+            <button class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold"><i class="bi bi-play-circle-fill me-2"></i> View Showcase</button>
+        </div>
+    </section>
+
+    <div class="container py-5">
+        <div class="row g-4 mt-3">
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(0)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="E-commerce">
+                        <span class="project-badge">Web Design</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">UI/UX</span><span class="category-badge">React</span></div>
+                        <h5 class="card-title fw-bold mb-2">E-Commerce Revolution</h5>
+                        <p class="card-text mb-3">Modern shopping experience with seamless checkout and AI recommendations.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2025</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(1)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=500&h=300&fit=crop" alt="Mobile">
+                        <span class="project-badge">Mobile</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">iOS</span><span class="category-badge">Android</span></div>
+                        <h5 class="card-title fw-bold mb-2">Fitness Tracker Pro</h5>
+                        <p class="card-text mb-3">Track workouts, nutrition, and progress with this fitness companion.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2025</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(2)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop" alt="Dashboard">
+                        <span class="project-badge">Dashboard</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">Analytics</span><span class="category-badge">SaaS</span></div>
+                        <h5 class="card-title fw-bold mb-2">Analytics Dashboard</h5>
+                        <p class="card-text mb-3">Real-time data visualization with customizable widgets and insights.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2025</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(3)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500&h=300&fit=crop" alt="Brand">
+                        <span class="project-badge">Branding</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">Logo</span><span class="category-badge">Identity</span></div>
+                        <h5 class="card-title fw-bold mb-2">Luxury Brand Identity</h5>
+                        <p class="card-text mb-3">Complete brand redesign for premium fashion with elegant aesthetics.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2024</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(4)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=500&h=300&fit=crop" alt="Social">
+                        <span class="project-badge">Social</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">Community</span><span class="category-badge">Web3</span></div>
+                        <h5 class="card-title fw-bold mb-2">Creator Social Hub</h5>
+                        <p class="card-text mb-3">Connect creators with audience through exclusive content and live streams.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2024</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="project-card" onclick="showProject(5)">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=500&h=300&fit=crop" alt="AI">
+                        <span class="project-badge">AI/ML</span>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="mb-2"><span class="category-badge">AI</span><span class="category-badge">Python</span></div>
+                        <h5 class="card-title fw-bold mb-2">AI Content Generator</h5>
+                        <p class="card-text mb-3">Intelligent content creation powered by advanced machine learning.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="card-text"><i class="bi bi-calendar3"></i> 2024</small>
+                            <button class="btn btn-glow btn-sm">View Details <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title fw-bold"><i class="bi bi-stars me-2"></i><span id="modalTitle"></span></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detail-section">
+                        <h6><i class="bi bi-info-circle me-2"></i>About This Project</h6>
+                        <p id="modalDesc"></p>
+                    </div>
+                    <div class="detail-section">
+                        <h6><i class="bi bi-stack me-2"></i>Technologies</h6>
+                        <div id="modalTech"></div>
+                    </div>
+                    <div class="detail-section">
+                        <h6><i class="bi bi-check2-circle me-2"></i>Key Features</h6>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-glow rounded-pill px-4"><i class="bi bi-box-arrow-up-right me-2"></i>Visit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="fw-bold mb-3"><i class="bi bi-lightning-charge-fill text-warning"></i> CreativeStudio</h4>
+                    <p class="text-muted">Building tomorrow's digital experiences today.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Connect</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon"><i class="bi bi-dribbble"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-behance"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 opacity-25">
+            <div class="text-center text-muted"><p class="mb-0">&copy; 2025 CreativeStudio. Built with Bootstrap 5.</p></div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
